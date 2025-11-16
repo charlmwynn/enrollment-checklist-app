@@ -1,23 +1,32 @@
-/* basic tab css taken from https://www.w3schools.com/howto/howto_css_icon_bar.asp*/
-.icon-bar {
-  width: 90px; /* Set a specific width */
-  background-color: #ffffff; /* Dark-grey background */
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 8px;
+  border-radius: 6px;
+  user-select: none;
 }
 
-.icon-bar a {
-  display: block; /* Make the links appear below each other instead of side-by-side */
-  text-align: center; /* Center-align text */
-  padding: 16px; /* Add some padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: rgb(0, 0, 0); /* White text color */
-  font-size: 36px; /* Increased font-size */
+.icon-link i {
+  margin-bottom: 4px;
 }
 
-.icon-bar a:hover {
-  background-color: #000; /* Add a hover color */
+.icon-link:hover,
+.icon-link.active {
+  background-color: #091b69;
+  color: white;
+  cursor: pointer;
 }
 
-.active {
-  background-color: #091b69; /* Add an active/current color */
-  color: #ffffff;
+h3 {
+  margin-bottom: 0.2rem;
+}
+
+p {
+  margin-top: 0;
+  color: #333;
 }
