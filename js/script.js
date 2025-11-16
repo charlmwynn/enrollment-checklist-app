@@ -1,3 +1,4 @@
+//checkbox JS -- listens for a "check", then checks/unchecks boxes using the check all/ uncheck buttons.
 document.addEventListener('DOMContentLoaded', () => {
   const checklist = document.querySelectorAll('.checklist-list input[type="checkbox"]');
   const checkAllBtn = document.getElementById('checkAllBtn');
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+//openstreetmap API. I think I did it right? Not really sure what qulifies as API versus just...embedding a map. 
 document.addEventListener('DOMContentLoaded', () => {
   var map = L.map('map').setView([42.34117, -71.24350], 16);
 

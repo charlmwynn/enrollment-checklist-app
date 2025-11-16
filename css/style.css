@@ -1,3 +1,11 @@
+/* I wrote and re-wrote so much css here that I'm genuinely not even sure if it's all needed or if any of it's redundant. this was the roughest part for me. I'll definitely be adding more and adjusting to improve the look/responsiveness of the page.*/
+/* note to self to change colors to match Lasell style sheet.
+/*Much trial and error to get the icons on page 1 to work*/
+.icon-cell {
+  width: 90px;
+  text-align: center;
+  flex-shrink: 0;
+}
 .icon-link {
   display: flex;
   flex-direction: column;
@@ -25,7 +33,7 @@
   padding: 4px 0;
 }
 
-.page-title {
+.page-title {/* gotta remember to use this class on the other pages, not just page 1 */
   text-align: center;
   font-weight: 700;
   color: #212529;
@@ -37,25 +45,6 @@
   margin-bottom: 2rem;
 }
 
-.icon-cell {
-  width: 90px;
-  text-align: center;
-  flex-shrink: 0;
-}
-
-.content-cell {
-  padding-left: 20px;
-  max-width: 700px;
-}
-
-.content-cell h3 {
-  margin-top: 0;
-}
-
-.content-cell p {
-  margin-bottom: 0;
-  color: #444;
-}
 .checklist-list li {
   margin-bottom: 1.5rem;
 }
@@ -86,6 +75,20 @@
   margin-left: 38px;
   font-weight: 400;
   font-size: 14px;
+  color: #444;
+}
+
+.content-cell {
+  padding-left: 20px;
+  max-width: 700px;
+}
+
+.content-cell h3 {
+  margin-top: 0;
+}
+
+.content-cell p {
+  margin-bottom: 0;
   color: #444;
 }
 
