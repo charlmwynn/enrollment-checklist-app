@@ -1,44 +1,61 @@
-.icon-bar {
-  width: 90px;
-  background-color: #ffffff;
-  min-height: 100vh;
-  padding-top: 20px;
-  border-right: 1px solid #ddd;
-}
-
-.icon-bar a {
+.icon-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 0;
   text-decoration: none;
   color: black;
   font-size: 12px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-.icon-bar a i {
+.icon-link i {
   font-size: 28px;
+  color: #091b69;
   margin-bottom: 6px;
 }
 
-.icon-bar a:hover,
-.icon-bar a.active {
+.icon-link span {
+  font-size: 12px;
+}
+
+.icon-link.active,
+.icon-link:hover {
   background-color: #091b69;
-  color: white;
+  color: white; 
+  border-radius: 6px;
+  padding: 4px 0;
 }
 
 .page-title {
   text-align: center;
-  padding: 1rem 0;
   font-weight: 700;
   color: #212529;
 }
 
-.content {
+.checklist-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.icon-cell {
+  width: 90px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.content-cell {
+  padding-left: 20px;
   max-width: 700px;
 }
 
+.content-cell h3 {
+  margin-top: 0;
+}
+
+.content-cell p {
+  margin-bottom: 0;
+  color: #444;
+}
 .checklist-list li {
   margin-bottom: 1.5rem;
 }
@@ -72,6 +89,30 @@
   color: #444;
 }
 
-.btn-group button {
-  min-width: 120px;
+.btn-primary {
+  background-color: #091b69;
+  border-color: #091b69;
 }
+
+.btn-primary:hover {
+  background-color: #063060;
+  border-color: #063060;
+}
+
+.btn-nav {
+  background-color: #091b69;
+  border-color: #091b69;
+  color: white;
+}
+
+.btn-nav:hover {
+  background-color: #091b69;
+  border-color: #091b69;
+  color: white;
+}
+#map {
+  height: 400px;
+  width: 75%;
+  margin-top: 20px;
+}
+
