@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lasell Enrollment Checklist</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Enrollment Checklist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-  <body>
-    <h1>Your Enrollment Checklist</h1>
-    <script src = "./js/script.js"></script>
-  </body>
+  <h1 class="page-title">Your Enrollment Checklist</h1>
+  <p>Check the boxes below to keep track of whether or not you're on track for Fall enrollment!</p>
+  <div class="container-fluid d-flex p-0">
+    <div class="content p-4 flex-grow-1">
+      <ul class="checklist-list list-unstyled">
+        <li>
+          <label>
+            <input type="checkbox" id="step1" />
+            <i class="fa fa-paper-plane checklist-icon"></i>
+            <strong>Receive your acceptance letter!</strong>
+          </label>
+          <p class="checklist-desc">Verify that you've been admitted into the correct program, and see if you received a merit scholarship!</p>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="step2" />
+            <i class="fa fa-check checklist-icon"></i>
+            <strong>Submit your FAFSA</strong>
+          </label>
+          <p class="checklist-desc">The FAFSA makes you eligible for need-based financial aid and student loans.</p>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="step3" />
+            <i class="fa fa-id-card checklist-icon"></i>
+            <strong>Sign up for Orientation</strong>
+          </label>
+          <p class="checklist-desc">At orientation you'll meet future classmates, register for classes, and see your housing options.</p>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="step4" />
+            <i class="fa fa-user checklist-icon"></i>
+            <strong>Online Title IX Training</strong>
+          </label>
+          <p class="checklist-desc">Keep our campus safe and healthy for our whole community.</p>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" id="step5" />
+            <i class="fa fa-flag checklist-icon"></i>
+            <strong>Pay your Bill</strong>
+          </label>
+          <p class="checklist-desc">Bills are released July 1st, and payments are due before classes start.</p>
+        </li>
+      </ul>
+
+      <div class="d-flex mt-4 justify-content-between">
+      <button id="checkAllBtn" class="btn btn-primary">Check All</button>
+      <button id="clearAllBtn" class="btn btn-secondary">Clear All</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
 </html>
