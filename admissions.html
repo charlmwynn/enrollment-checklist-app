@@ -12,8 +12,25 @@
 </head>
 
   <body>
-    <h1>Find Your Admissions Counselor!</h1>
-    <p> there'll be something here, maybe a dropdown that will show each counselor's info using JS.</p><!-- lol I do intend to create some kind of dropdown of the counselors' names with javascript, I'm just putting it off cus it feels like an undertaking.-->
+     <div class="page-wrapper">
+    <div class="container my-5">
+      <h1 class="page-title mb-4">Find Your Admissions Counselor</h1>
+
+      <div class="counselor-box p-4">
+        <label for="stateSelect" class="form-label counselor-label">
+          Select Your State:
+        </label>
+
+        <select id="stateSelect" class="form-select counselor-dropdown mb-3">
+          <option value="">-- Choose a state --</option>
+        </select>
+
+        <div id="counselorInfo" class="counselor-info mt-4 p-3" style="display:none;">
+          <h4 id="counselorName" class="counselor-name"></h4>
+          <p id="counselorContact" class="counselor-contact"></p>
+        </div>
+      </div>
+    </div>
     <h2>1844 Commonwealth Ave. Auburndale, MA</h2>
     <div id="map"></div><!-- does this count as API? Hope so.-->
     <nav>
@@ -28,5 +45,6 @@
   </div>
 </div>
 </nav>
+</div>
   </body>
 </html>
